@@ -3,10 +3,9 @@ import java.util.Scanner;
 public class FizzBuzz {
 
     public int fizzBuzz(int number) {
-        Scanner numero = new Scanner(System.in);
-        int num;
         System.out.println("Ingresa un numero:");
-        num = numero.nextInt();
+        Scanner numero = new Scanner(System.in);
+        int num = numero.nextInt();
         if (num % 5 == 0) {
             System.out.println("Buzz");
         }
@@ -17,7 +16,7 @@ public class FizzBuzz {
             System.out.println(" FizzBuzz ");
         }
         if (num % 2 == 0) {
-            System.out.println(num);
+            System.out.println("2");
         }
         return num;
     }

@@ -1,4 +1,3 @@
-import java.lang.*;
 
 public class Pitagoras {
     public double calcularHipotenusa(int catetoA, int catetoB) {
