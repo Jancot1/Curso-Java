@@ -1,3 +1,4 @@
+package Fundamentals;
 public class StringManipulatorTest {
     public static void main(String[] args) {
         StringManipulator manipulatorObject = new StringManipulator();

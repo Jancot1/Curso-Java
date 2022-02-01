@@ -1,3 +1,4 @@
+package Fundamentals;
 public class StringManipulator {
     public String trimAndConcat(String hola, String mundo) {
         return hola.trim() + mundo.trim();
