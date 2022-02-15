@@ -71,8 +71,6 @@ public class BankAccount {
 					break;
 			}
 		} while (salir);
-
-
 	}
 
 	public static void menuPrincipal() {

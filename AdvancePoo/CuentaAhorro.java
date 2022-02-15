@@ -35,10 +35,6 @@ public class CuentaAhorro {
 		this.numeroDeCuenta();
 	}
 
-	public CuentaAhorro(String numCuenta, Double saldoCuentaAhorr) {
-		this.numeroDeCuenta();
-	}
-
 	// Getter y Setter
 	public double getSaldoCuentaAhorr() {
 		return saldoCuentaAhorr;
@@ -61,8 +57,8 @@ public class CuentaAhorro {
 	}
 
 	public static double retiraDinero(double retiro) {
-		if (retiro <=  0) {
-			System.err.println("Saldo insuficiente, no puede retirar más dinero");
+		if (saldoCuentaAhorr <=  0 || saldoCuentaAhorr < retiro) {
+			System.err.println("Saldo insuficiente, no puede realizar la operación");
 		} else {
 			saldoCuentaAhorr = saldoCuentaAhorr - retiro;
 		}

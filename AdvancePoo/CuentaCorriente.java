@@ -58,8 +58,8 @@ public class CuentaCorriente {
 	}
 
 	public static double retiraDinero(double retiro) {
-		if (saldoCuentaCorr <=  0 && saldoCuentaCorr < retiro) {
-			System.err.println("Saldo insuficiente, no puede retirar más dinero");
+		if (saldoCuentaCorr <=  0 || saldoCuentaCorr < retiro) {
+			System.err.println("Saldo insuficiente, no puede realizar la operación");
 		} else {
 			saldoCuentaCorr = saldoCuentaCorr - retiro;
 		}
